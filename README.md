@@ -4,25 +4,25 @@ This project implements a hardware-based Greatest Common Divisor (GCD) calculato
 ## Contents
 
 - [Project Description](#project-description)
-- [Algorithm](# Algorithm)
+- [Algorithm](#Algorithm)
 - [Usage](#usage)
 - [Testing](#testing)
 - [Contributing](#contributing)
 
 ## Algorithm
 ```
-while (1) {
-while (!start);
-while (A != B) {
-if (A > B) {
-A = A - B;
-}
-else { // A < B
-B = B - A;
-}
-}
-res = A; // or res = B because they should be equal
-}
+  while (1) {
+  while (!start);
+  while (A != B) {
+  if (A > B) {
+  A = A - B;
+  }
+  else { // A < B
+  B = B - A;
+  }
+  }
+  res = A; // or res = B because they should be equal
+  }
 ```
 ## Usage
 To use this project, you can clone this repository and open the RTL files in your preferred FPGA development environment. You can modify the RTL files as needed for your specific use case.
