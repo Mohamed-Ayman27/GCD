@@ -12,7 +12,7 @@ This project implements a hardware-based Greatest Common Divisor (GCD) calculato
 ## Project Structure
 The project includes the following files:
 .
-├── gcd_controller.v  # RTL implementation of the controller module
+├── '''gcd_controller.v  # RTL implementation of the controller module
 ├── gcd_datapath.v    # RTL implementation of the datapath module
 ├── gcd_top.v         # RTL implementation of the top module that combines the controller and datapath
 ├── gcd_testbench.v   # Simple testbench that checks the results for at least 2 sets of inputs
