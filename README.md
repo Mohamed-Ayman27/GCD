@@ -4,20 +4,26 @@ This project implements a hardware-based Greatest Common Divisor (GCD) calculato
 ## Contents
 
 - [Project Description](#project-description)
-- [Project Structure](#project-structure)
+- [Algorithm](# Algorithm)
 - [Usage](#usage)
 - [Testing](#testing)
 - [Contributing](#contributing)
 
-## Project Structure
-The project includes the following files:
-.
-├── '''gcd_controller.v  # RTL implementation of the controller module
-├── gcd_datapath.v    # RTL implementation of the datapath module
-├── gcd_top.v         # RTL implementation of the top module that combines the controller and datapath
-├── gcd_testbench.v   # Simple testbench that checks the results for at least 2 sets of inputs
-└── README.md         # This README file
-
+## Algorithm
+```
+while (1) {
+while (!start);
+while (A != B) {
+if (A > B) {
+A = A - B;
+}
+else { // A < B
+B = B - A;
+}
+}
+res = A; // or res = B because they should be equal
+}
+```
 ## Usage
 To use this project, you can clone this repository and open the RTL files in your preferred FPGA development environment. You can modify the RTL files as needed for your specific use case.
 
