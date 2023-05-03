@@ -8,8 +8,7 @@ This project implements a hardware-based Greatest Common Divisor (GCD) calculato
 - [Usage](#usage)
 - [Testing](#testing)
 - [Contributing](#contributing)
-- [License](#license)
-- 
+
 ## Project Structure
 The project includes the following files:
 .
